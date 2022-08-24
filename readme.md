@@ -1,1 +1,1 @@
-login mejorado y con estilos (espero)
+login mejorado, con estilos y un poco de bootstrap
