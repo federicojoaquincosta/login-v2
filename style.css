@@ -2,6 +2,13 @@
     margin-top: 20px;
 }
 
+.ingreso {
+    display:block;
+    width:15%;
+    margin:0 auto;
+    margin-top: 10px;
+    justify-content: center;
+}
 
 .input {
     display:block;
@@ -15,4 +22,39 @@
     width:20%;
     margin:0 auto;
     margin-top: 10px;
+}
+
+.fracaso {
+    display:block;
+    width:20%;
+    margin:0 auto;
+    margin-top: 10px;
+    color: red;
+}
+
+.exito {
+    display:block;
+    width:20%;
+    margin:0 auto;
+    margin-top: 10px;
+    color: green;
+}
+
+.registro {
+    display:block;
+    width:15%;
+    margin:0 auto;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.mensaje {
+    display:block;
+    width:20%;
+    margin:0 auto;
+    margin-top: 10px;
+}
+
+.regocul {
+    display: none;
 }

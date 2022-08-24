@@ -16,6 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <h2 class="ingreso">Ingreso</h2>
                 <input class="input" type="text" placeholder="Usuario" id="usuario">
             </div>
 
@@ -30,6 +31,20 @@
             <div class="col-12">
                 <div class="exito" id="exito"></div>
                 <div class="fracaso" id="fracaso"></div>
+            </div>
+
+            <div id ="botregis" class="col-12 botregis">
+                <button type="button" onclick="mostrar()" class="btn btn-outline-warning text-dark">Crear nuevo usuario</button>
+            </div>
+
+            <div id="regocul" class="col-12 regocul">
+                <h2 class="registro">Registro</h2>
+                <input class="input" type="text" placeholder="Usuario nuevo" id="usuarionuevo">
+                <input class="input" type="password" placeholder="Contraseña nueva" id="contrasenianueva1">
+                <input class="input" type="password" placeholder="Repetir contraseña" id="contrasenianueva2">
+                <button type="button" onclick="registrar()" class="btn btn-outline-dark">Registrar usuario</button>
+                <div class="mensaje" id="mensaje"></div>
+
             </div>
         </div>
     </div>
