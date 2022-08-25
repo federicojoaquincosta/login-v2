@@ -11,12 +11,13 @@ function verificar() {
     }
     indexUN = USUARIOS.findIndex(checkuser);
 
-    function checkpw(pass) {
+    /*function checkpw(pass) {
         return pass == pw;
     }
     indexPW = CONTRASENIAS.findIndex(checkpw);
+    */
 
-    if ((indexUN > -1) && (indexPW == indexUN)) {
+    if ((indexUN > -1) && (CONTRASENIAS[indexUN] == pw)) {
         document.querySelector("#fracaso").innerHTML = ``;
         document.querySelector("#exito").innerHTML = `Login exitoso`;
         document.getElementById("regocul").style.display = "none"
@@ -25,6 +26,7 @@ function verificar() {
     } else {
         document.querySelector("#exito").innerHTML = ``;
         document.querySelector("#fracaso").innerHTML = `Usuario y/o contraseña inválidos, ¿desea crear una cuenta?`;
+        document.getElementById("botregis").style.display = "block"
     }
 
 } 
