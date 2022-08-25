@@ -19,10 +19,12 @@ function verificar() {
     if ((indexUN > -1) && (indexPW == indexUN)) {
         document.querySelector("#fracaso").innerHTML = ``;
         document.querySelector("#exito").innerHTML = `Login exitoso`;
+        document.getElementById("regocul").style.display = "none"
+        document.getElementById("botregis").style.display = "none"
 
     } else {
         document.querySelector("#exito").innerHTML = ``;
-        document.querySelector("#fracaso").innerHTML = `Usuario y/o contraseña inválidos`;
+        document.querySelector("#fracaso").innerHTML = `Usuario y/o contraseña inválidos, ¿desea crear una cuenta?`;
     }
 
 } 
@@ -49,7 +51,16 @@ function registrar() {
    }
 }
 
-function mostrar(){
+function mostrarRegistro(){
     document.getElementById("botregis").style.display = "none"
     document.getElementById("regocul").style.display = "block"
+    document.getElementById("botlogin").style.display = "none"
+    document.getElementById("logocul").style.display = "none"
+}
+
+function mostrarLogin(){
+    document.getElementById("botlogin").style.display = "none"
+    document.getElementById("logocul").style.display = "block"
+    document.getElementById("regocul").style.display = "none"
+    document.getElementById("botregis").style.display = "block"
 }

@@ -15,26 +15,32 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h2 class="ingreso">Ingreso</h2>
-                <input class="input" type="text" placeholder="Usuario" id="usuario">
+            <div id="botlogin" class="col-12 botlogin">
+                <button type="button" onclick="mostrarLogin()" class="btn btn-primary">Login</button>
             </div>
 
-            <div class="col-12">
-                <input class="input" type="password" placeholder="Contraseña" id="contrasenia">
+            <div id="logocul" class="logocul">
+                <div class="col-12">
+                    <h2 class="ingreso">Ingreso</h2>
+                    <input class="input" type="text" placeholder="Usuario" id="usuario">
+                </div>
+
+                <div class="col-12">
+                    <input class="input" type="password" placeholder="Contraseña" id="contrasenia">
+                </div>
+
+                <div class="col-12">
+                    <button type="button" onclick="verificar()" class="btn btn-outline-primary">Ingresar</button>
+                </div>
+
+                <div class="col-12">
+                    <div class="exito" id="exito"></div>
+                    <div class="fracaso" id="fracaso"></div>
+                </div>
             </div>
 
-            <div class="col-12">
-                <button type="button" onclick="verificar()" class="btn btn-outline-primary">Ingresar</button>
-            </div>
-
-            <div class="col-12">
-                <div class="exito" id="exito"></div>
-                <div class="fracaso" id="fracaso"></div>
-            </div>
-
-            <div id ="botregis" class="col-12 botregis">
-                <button type="button" onclick="mostrar()" class="btn btn-outline-warning text-dark">Crear nuevo usuario</button>
+            <div id="botregis" class="col-12 botregis">
+                <button type="button" onclick="mostrarRegistro()" class="btn btn-warning text-dark">Crear nuevo usuario</button>
             </div>
 
             <div id="regocul" class="col-12 regocul">
@@ -42,8 +48,9 @@
                 <input class="input" type="text" placeholder="Usuario nuevo" id="usuarionuevo">
                 <input class="input" type="password" placeholder="Contraseña nueva" id="contrasenianueva1">
                 <input class="input" type="password" placeholder="Repetir contraseña" id="contrasenianueva2">
-                <button type="button" onclick="registrar()" class="btn btn-outline-dark">Registrar usuario</button>
+                <button type="button" onclick="registrar()" class="btn btn-outline-warning text-dark">Registrar usuario</button>
                 <div class="mensaje" id="mensaje"></div>
+                <button type="button" onclick="mostrarLogin()" class="btn btn-primary">Volver a interfaz de login</button>
 
             </div>
         </div>
