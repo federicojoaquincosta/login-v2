@@ -44,9 +44,9 @@ function registrar() {
 
    if (indexNUN > -1) {
     document.querySelector("#mensaje").innerHTML = `Ese nombre de usuario ya existe, por favor elija otro`
-   } else if (indexNUN = -1 && newpw != pwcheck) {
+   } else if (indexNUN == -1 && newpw != pwcheck) {
     document.querySelector("#mensaje").innerHTML = `Por favor introduzca dos veces la misma contraseña`
-   } else if (newuser !== null && newpw !== null && pwcheck !== null) {
+   } else if (newuser !=="" && newpw !=="" && pwcheck !=="") {
     USUARIOS.push(document.querySelector("#usuarionuevo").value);
     CONTRASENIAS.push(document.querySelector("#contrasenianueva1").value);
     document.querySelector("#mensaje").innerHTML = `Usuario registrado exitosamente`
